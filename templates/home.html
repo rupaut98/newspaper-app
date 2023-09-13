@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% block title %}Home{% endblock title %}
+{% block content %} <br/>
+<div class="container-fluid">
+    <h1 class="display-4 text-center">Welcome to Our Newspaper</h1>
+    <p class="lead text-center">Stay Informed and Explore the Latest News</p>
+    <div class="text-center">
+        <a class="btn btn-primary btn-lg" href="{% url 'article_list' %}" role="button">
+            <i class="fas fa-newspaper"></i> View All Articles
+        </a>
+    </div>
+</div>
+
+
+{% endblock content %}
